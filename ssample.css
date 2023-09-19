@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+}
+.main{
+    display:flex;
+    flex-wrap: wrap;
+   
+}
+.main div {
+    width:33.33333%;
+    padding:10px;
+}
+.parentone ,.parenttwo, .parentthree{
+    display:flex;
+    flex-wrap: wrap;
+   /* border: 2px solid black;*/
+  
+  
+}
+.parentone .childone , .parenttwo .childthree , .parentthree .childfive {
+    width: 20%;
+    background-color: aqua;
+}
+.parentone .childtwo , .parenttwo .childfour , .parentthree .childsix {
+    width:80%;
+    background-color: blanchedalmond;
+    
+   
+}
+.childone p ,.childthree p ,.childfive p{
+    height: 150px;
+    display:flex;
+    flex-wrap: wrap;
+    padding:10px;
+}
+/*
+.childone, .childthree, .childfive {
+    border-right: 2px solid black;
+} /*
